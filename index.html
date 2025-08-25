@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Hemanth Solleti – Backend Developer: projects, skills, and contact." />
+    <meta name="author" content="Hemanth Solleti" />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://hemanthshetty1409.github.io/portfolio/" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Your Name • Portfolio" />
+    <meta property="og:description" content="Projects, skills, and contact information." />
+    <meta property="og:url" content="https://hemanthshetty1409.github.io/portfolio/" />
+    <meta property="og:image" content="assets/images/og-image.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Your Name • Portfolio" />
+    <meta name="twitter:description" content="Projects, skills, and contact information." />
+    <meta name="twitter:image" content="assets/images/og-image.png" />
+    <title>Hemanth Solleti • Backend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" href="assets/images/favicon.png" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="#top" class="brand">Hemanth<span>Solleti</span></a>
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="nav-list" id="primaryNav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Hello, I'm <span class="accent">Hemanth Solleti</span></h1>
+            <p class="lead">Backend Developer based in Bengaluru, building scalable, maintainable systems with Python, Django/FastAPI, REST APIs, and SQL/NoSQL.</p>
+            <div class="hero-cta">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn ghost" href="assets/Hemanth_Solleti_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <div class="avatar">
+              <img src="assets/images/profile.jpg" alt="Portrait of Hemanth Solleti" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <h2 class="section-title">About</h2>
+          <p>
+            Enthusiastic and dedicated Computer Science and Engineering graduate with hands‑on experience in
+            backend development. Proficient in Python, REST APIs, MySQL, and AI integration using LLaMA models.
+            Experienced across the software lifecycle: design, development, testing, and deployment. Passionate
+            about building scalable, maintainable, and performant backend systems using modern technologies.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <ul class="chips">
+            <li>Python</li>
+            <li>Django</li>
+            <li>FastAPI</li>
+            <li>REST APIs</li>
+            <li>SQL (MySQL, PostgreSQL)</li>
+            <li>MongoDB</li>
+            <li>Docker</li>
+            <li>CI/CD (GitHub Actions)</li>
+            <li>Kafka</li>
+            <li>RabbitMQ</li>
+            <li>Node.js & Express</li>
+            <li>Java</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <div class="grid projects-grid">
+            <article class="card project">
+              <img src="assets/images/project-1.jpg" alt="Screenshot of Smart City Travel Portal" class="card-media" />
+              <div class="card-body">
+                <h3 class="card-title">Smart City Travel Portal</h3>
+                <p>Java, MySQL, HTML, CSS. Built admin modules to manage tourist data and enabled users to search, browse, and plan routes. Integrated Java backend with MySQL for data management.</p>
+                <div class="card-actions">
+                  <a class="btn small primary" href="#" target="_blank" rel="noopener">Live</a>
+                  <a class="btn small ghost" href="#" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+            <article class="card project">
+              <img src="assets/images/project-2.jpg" alt="Screenshot of Happy Farmers" class="card-media" />
+              <div class="card-body">
+                <h3 class="card-title">Happy Farmers (APIs with Django)</h3>
+                <p>Analyzed business requirements and developed scalable backend services with Django REST APIs. Implemented auth (RBAC), integrated third‑party services and payments, and deployed on cloud.</p>
+                <div class="card-actions">
+                  <a class="btn small primary" href="#" target="_blank" rel="noopener">Live</a>
+                  <a class="btn small ghost" href="#" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+            <article class="card project">
+              <img src="assets/images/project-3.jpg" alt="Screenshot of IDP Microservices Project" class="card-media" />
+              <div class="card-body">
+                <h3 class="card-title">Intelligent Document Processing (Microservices + Agentic AI)</h3>
+                <p>Designed microservices for document parsing, data extraction, and validation. Integrated LLaMA models for intelligent document processing and built async communication using message brokers.</p>
+                <div class="card-actions">
+                  <a class="btn small primary" href="#" target="_blank" rel="noopener">Live</a>
+                  <a class="btn small ghost" href="#" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <p>
+            Want to collaborate or just say hi? Reach me via email or socials.
+          </p>
+          <div class="contact-actions">
+            <a class="btn primary" href="mailto:hemanthsolleti04@gmail.com">Email Me</a>
+            <a class="btn ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn ghost" href="https://github.com/hemanthshetty1409" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Hemanth Solleti. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>
+
+
