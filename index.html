@@ -26,9 +26,8 @@
     <link rel="icon" href="assets/images/favicon.png" />
   </head>
   <body>
-    <header class="site-header" id="top">
+    <header class="site-header reveal" id="top" data-reveal="down" style="--reveal-delay: 80ms">
       <div class="container header-inner">
-        <a href="#top" class="brand">Hemanth<span>Solleti</span></a>
         <nav class="nav" aria-label="Primary">
           <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
             <span class="bar"></span>
@@ -37,27 +36,26 @@
           </button>
           <ul class="nav-list" id="primaryNav">
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
       </div>
     </header>
 
     <main>
       <section class="hero" id="hero">
         <div class="container hero-inner">
-          <div class="hero-copy">
-            <h1>Hello, I'm <span class="accent">Hemanth Solleti</span></h1>
+          <div class="hero-copy reveal" data-reveal="up" style="--reveal-delay: 120ms">
+            <h1><span class="accent">Hemanth Solleti</span></h1>
             <p class="lead">Backend Developer based in Bengaluru, building scalable, maintainable systems with Python, Django/FastAPI, REST APIs, and SQL/NoSQL.</p>
             <div class="hero-cta">
               <a class="btn primary" href="#projects">View Projects</a>
-              <a class="btn ghost" href="assets/Hemanth_Solleti_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+              <a class="btn ghost" href="assets/Hemanth Solleti.pdf" target="_blank" rel="noopener">Download CV</a>
             </div>
           </div>
-          <div class="hero-media">
+          <div class="hero-media reveal" data-reveal="left" style="--reveal-delay: 240ms">
             <div class="avatar">
               <img src="assets/images/profile.jpg" alt="Portrait of Hemanth Solleti" />
             </div>
@@ -67,86 +65,108 @@
 
       <section class="section" id="about">
         <div class="container">
-          <h2 class="section-title">About</h2>
-          <p>
-            Enthusiastic and dedicated Computer Science and Engineering graduate with hands‑on experience in
-            backend development. Proficient in Python, REST APIs, MySQL, and AI integration using LLaMA models.
-            Experienced across the software lifecycle: design, development, testing, and deployment. Passionate
-            about building scalable, maintainable, and performant backend systems using modern technologies.
+          <h2 class="section-title reveal" data-reveal="up">About Me</h2>
+          <p class="reveal" data-reveal="up" style="--reveal-delay: 80ms">
+            I am a passionate Backend Developer based in Bengaluru, Karnataka, specializing in Python, Django, and RESTful API development. With hands-on experience in building scalable, secure, and maintainable backend systems, I have worked extensively with microservices, databases, and cloud deployments.
+          </p>
+          <p class="reveal" data-reveal="up" style="--reveal-delay: 160ms">
+            My expertise includes designing and optimizing backend architecture, integrating AI-powered solutions, and implementing role-based access control to create robust and user-friendly applications. I am proficient in working with both SQL and NoSQL databases, and I leverage modern DevOps tools like GitHub Actions and Docker to streamline deployment processes.
+          </p>
+          <p class="reveal" data-reveal="up" style="--reveal-delay: 240ms">
+            I enjoy solving complex problems through clean, efficient code and constantly strive to enhance user experience and application performance. Let’s collaborate to build innovative software solutions that make an impact.
           </p>
         </div>
-      </section>
-
-      <section class="section" id="skills">
-        <div class="container">
-          <h2 class="section-title">Skills</h2>
-          <ul class="chips">
-            <li>Python</li>
-            <li>Django</li>
-            <li>FastAPI</li>
-            <li>REST APIs</li>
-            <li>SQL (MySQL, PostgreSQL)</li>
-            <li>MongoDB</li>
-            <li>Docker</li>
-            <li>CI/CD (GitHub Actions)</li>
-            <li>Kafka</li>
-            <li>RabbitMQ</li>
-            <li>Node.js & Express</li>
-            <li>Java</li>
-          </ul>
-        </div>
-      </section>
+      </section>      
 
       <section class="section" id="projects">
         <div class="container">
-          <h2 class="section-title">Projects</h2>
+          <h2 class="section-title reveal" data-reveal="up">Projects</h2>
           <div class="grid projects-grid">
-            <article class="card project">
-              <img src="assets/images/project-1.jpg" alt="Screenshot of Smart City Travel Portal" class="card-media" />
-              <div class="card-body">
-                <h3 class="card-title">Smart City Travel Portal</h3>
-                <p>Java, MySQL, HTML, CSS. Built admin modules to manage tourist data and enabled users to search, browse, and plan routes. Integrated Java backend with MySQL for data management.</p>
-                <div class="card-actions">
-                  <a class="btn small primary" href="#" target="_blank" rel="noopener">Live</a>
-                  <a class="btn small ghost" href="#" target="_blank" rel="noopener">Code</a>
-                </div>
-              </div>
-            </article>
-            <article class="card project">
-              <img src="assets/images/project-2.jpg" alt="Screenshot of Happy Farmers" class="card-media" />
-              <div class="card-body">
-                <h3 class="card-title">Happy Farmers (APIs with Django)</h3>
-                <p>Analyzed business requirements and developed scalable backend services with Django REST APIs. Implemented auth (RBAC), integrated third‑party services and payments, and deployed on cloud.</p>
-                <div class="card-actions">
-                  <a class="btn small primary" href="#" target="_blank" rel="noopener">Live</a>
-                  <a class="btn small ghost" href="#" target="_blank" rel="noopener">Code</a>
-                </div>
-              </div>
-            </article>
-            <article class="card project">
-              <img src="assets/images/project-3.jpg" alt="Screenshot of IDP Microservices Project" class="card-media" />
-              <div class="card-body">
-                <h3 class="card-title">Intelligent Document Processing (Microservices + Agentic AI)</h3>
-                <p>Designed microservices for document parsing, data extraction, and validation. Integrated LLaMA models for intelligent document processing and built async communication using message brokers.</p>
-                <div class="card-actions">
-                  <a class="btn small primary" href="#" target="_blank" rel="noopener">Live</a>
-                  <a class="btn small ghost" href="#" target="_blank" rel="noopener">Code</a>
-                </div>
-              </div>
-            </article>
+          <article class="project reveal" data-reveal="up" style="--reveal-delay: 80ms">
+            <h3>Happy Farmers</h3>
+            <p><strong>Backend Development (Django & API)</strong></p>
+            <ul>
+              <li>Designed and optimized RESTful APIs for seamless backend integration.</li>
+              <li>Implemented authentication, authorization, and role-based access control (RBAC).</li>
+              <li>Integrated third-party services and managed cloud deployments on AWS/Azure.</li>
+            </ul>
+          </article>
+
+          <article class="project reveal" data-reveal="up" style="--reveal-delay: 160ms">
+            <h3>1IDP Project</h3>
+            <p><strong>Backend Developer (Microservices & AI Integration)</strong></p>
+            <ul>
+              <li>Developed modular, scalable microservices-based backend using Python.</li>
+              <li>Integrated AI-powered LLaMA models for intelligent document processing.</li>
+              <li>Implemented asynchronous communication with message brokers like Kafka and RabbitMQ.</li>
+              <li>Designed and maintained API orchestration for AI-powered modules.</li>
+            </ul>
+          </article>
+
+          <article class="project reveal" data-reveal="up" style="--reveal-delay: 240ms">
+            <h3>Wildlife Organization Website</h3>
+            <p><strong>Full Stack Development (Python, Django, HTML, CSS)</strong></p>
+            <ul>
+              <li>Built an interactive platform for wildlife conservation awareness and content management.</li>
+              <li>Designed user-friendly interfaces and applied role-based access control for managing bookings and resources.</li>
+              <li>Ensured responsive design across multiple devices.</li>
+            </ul>
+          </article>
+
+          <article class="project reveal" data-reveal="up" style="--reveal-delay: 320ms">
+            <h3>Smart City Travel Portal</h3>
+            <p><strong>Backend & Frontend (Java, MySQL, HTML, CSS)</strong></p>
+            <ul>
+              <li>Developed a portal to assist tourists in planning routes and exploring city attractions.</li>
+              <li>Created dynamic admin modules for managing locations and geolocation data.</li>
+              <li>Implemented backend logic using Java integrated with MySQL.</li>
+            </ul>
+          </article>
           </div>
         </div>
-      </section>
+      </section>      
+
+      <section class="section" id="skills">
+        <div class="container">
+          <h2 class="section-title reveal" data-reveal="up">Skills</h2>
+          <div class="skills-grid reveal" data-reveal="up" style="--reveal-delay: 80ms">
+            <div>
+              <h3>Programming Languages</h3>
+              <p>Python, Java, JavaScript, SQL, HTML, CSS</p>
+            </div>
+            <div>
+              <h3>Backend Frameworks & Tools</h3>
+              <p>Django, FastAPI, Flask, REST APIs, Microservices, Postman</p>
+            </div>
+            <div>
+              <h3>Frontend</h3>
+              <p>HTML5, CSS3, JavaScript, Bootstrap, jQuery</p>
+            </div>
+            <div>
+              <h3>Databases</h3>
+              <p>MySQL, PostgreSQL, MongoDB, Redis, SQLite</p>
+            </div>
+            <div>
+              <h3>Machine Learning & AI</h3>
+              <p>Python (NumPy, Pandas, Scikit-learn), LLaMA Models, AI-powered solutions</p>
+            </div>
+            <div>
+              <h3>DevOps & Tools</h3>
+              <p>Git, GitHub Actions, Docker, CI/CD, Linux (Ubuntu), RabbitMQ, Kafka</p>
+            </div>
+          </div>
+        </div>
+      </section>      
 
       <section class="section" id="contact">
         <div class="container">
-          <h2 class="section-title">Contact</h2>
-          <p>
+          <h2 class="section-title reveal" data-reveal="up">Contact</h2>
+          <p class="reveal" data-reveal="up" style="--reveal-delay: 80ms">
             Want to collaborate or just say hi? Reach me via email or socials.
           </p>
-          <div class="contact-actions">
+          <div class="contact-actions reveal" data-reveal="up" style="--reveal-delay: 160ms">
             <a class="btn primary" href="mailto:hemanthsolleti04@gmail.com">Email Me</a>
-            <a class="btn ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/hemanth-solleti-1411b0223/" target="_blank" rel="noopener">LinkedIn</a>
             <a class="btn ghost" href="https://github.com/hemanthshetty1409" target="_blank" rel="noopener">GitHub</a>
           </div>
         </div>
